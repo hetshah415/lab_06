@@ -71,7 +71,7 @@ public class shoppingListServlet extends HttpServlet {
                         session.setAttribute("itemList", itemList);
                     }
                     getServletContext().getRequestDispatcher("/WEB-INF/shoppingList.jsp").forward(request, response);
-                    break;
+                    break; 
                 }
                 case "delete": {
                     String item = request.getParameter("item");
